@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/goToMainBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="33dp"
+        android:text="Powrót"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goToSessionBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="33dp"
+        android:text="Koszyk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buyBT"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="122dp"
+        android:text="Do koszyka"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCurrency"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="36dp"
+        android:text="Wybierz walutę:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currencyAmountTV"
+        android:layout_width="81dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="41dp"
+        android:text="ilośc wybranej waluty"
+        app:layout_constraintBottom_toTopOf="@+id/goToMainBT"
+        app:layout_constraintEnd_toStartOf="@+id/priceTV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentRateTV"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="81dp"
+        android:text="aktualny kurs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceTV"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="121dp"
+        android:text="suma ceny"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buyBT" />
+
+    <TextView
+        android:id="@+id/historyRateTV"
+        android:layout_width="250dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="81dp"
+        android:text="historia ostatnie 5 dni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentRateTV" />
+</android.support.constraint.ConstraintLayout>

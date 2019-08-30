@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PracaInżynierska</string>
+    <string name="calkowity_zysk">calkowity zysk</string>
+    
+    <string-array name="currencyName">
+        <item>Dolar</item>
+        <item>Funt</item>
+        <item>Jen</item>
+        <item>Rubel</item>
+        <item>Euro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartingPage">
+
+    <TextView
+        android:id="@+id/accountBallanceTV"
+        android:layout_width="123dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="saldo : 55556678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/overallProfitTV"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="calkowity zysk: 123543"
+        app:layout_constraintEnd_toEndOf="@+id/lastSessionProfitTV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastSessionProfitTV"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="zysk z ostatniej sesji: 12343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overallProfitTV" />
+
+    <Button
+        android:id="@+id/exchangeRateButton"
+        android:layout_width="274dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="kursy"
+        app:layout_constraintBottom_toTopOf="@+id/investButton"
+        app:layout_constraintEnd_toEndOf="@+id/investButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/investButton"
+        app:layout_constraintTop_toBottomOf="@+id/lastSessionProfitTV" />
+
+    <Button
+        android:id="@+id/investButton"
+        android:layout_width="274dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Aktualna sesja inwestycji"
+        app:layout_constraintBottom_toTopOf="@+id/transactionHistoryButton"
+        app:layout_constraintEnd_toEndOf="@+id/transactionHistoryButton"
+        app:layout_constraintStart_toStartOf="@+id/transactionHistoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/exchangeRateButton" />
+
+    <Button
+        android:id="@+id/transactionHistoryButton"
+        android:layout_width="274dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="150dp"
+        android:text="Historia transkcji"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/investButton" />
+</android.support.constraint.ConstraintLayout>
